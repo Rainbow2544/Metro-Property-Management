@@ -73,7 +73,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-The Metro Property Website Clone is a feature-rich web application developed using modern technologies such as React.js (with Vite), Node.js with TypeScript, and MongoDB. The goal of this project is to replicate the functionality and design of a popular property website, providing users with a seamless and intuitive experience when searching for properties, applying for properties, and booking property viewings.
+The Metro Property Website Clone is a feature-rich web application developed using modern technologies such as React.js (with Vite), Node.js with TypeScript,SCSS, Docker with kubernetes and MongoDB. The goal of this project is to replicate the functionality and design of a popular property website, providing users with a seamless and intuitive experience when searching for properties, applying for properties, and booking property viewings.
 
 <div align="center">
   <img src="images/screenshot.jpeg" alt="screenshot1" width="600" height="800">
