@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - name: frontend
+        image: m5frontendacr.azurecr.io/web-client:9b7dc5c1eb020ff1aef91ff70f602f51babbe19e
+        ports:
+        - containerPort: 3000
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "100m"
+          limits:
+            memory: "512Mi"
+            cpu: "200m"
+        env:
+        - name: VITE_BACKEND_URL
+          valueFrom:
+            secretKeyRef:
+              name: backend-url
+              key: VITE_BACKEND_URL
